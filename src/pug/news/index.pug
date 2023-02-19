@@ -1,0 +1,28 @@
+extend ../components/page/_default
+append value
+  - const title = "アバウトのタイトル | Site Name";
+  - const description = "アバウトのディスクリプション";
+  - const keywords = "キーワード,キーワード2,キーワード3";
+  - const path = "..";
+  - const location = "about";
+  - const ogImageUrl = "img/og,jpg";
+
+block header
+  include ../components/layout/_header
+
+block visual
+  .main-visual.is-top
+    .main-visual__content
+      .main-visual__text お知らせ
+
+block section
+  .section
+    .inner
+      h2.section__title お知らせ
+      .section__lead NEWS
+        .section__body
+          p お知らせのコンテンツが入ります。
+  include ../components/page/_news
+          
+block footer
+  include ../components/layout/_footer

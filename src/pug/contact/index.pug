@@ -1,0 +1,27 @@
+extend ../components/page/_default
+append value
+  - const title = "アバウトのタイトル | Site Name";
+  - const description = "アバウトのディスクリプション";
+  - const keywords = "キーワード,キーワード2,キーワード3";
+  - const path = "..";
+  - const location = "about";
+  - const ogImageUrl = "img/og.jpg";
+
+block header
+  include ../components/layout/_header
+
+block visual
+  .main-visual.is-top
+    .main-visual__content
+      .main-visual__text お問い合わせ
+
+block section
+  .section
+    .inner
+      h2.section__title お問い合わせ
+      .section__lead Contact
+        .section__body
+          p お問い合わせのコンテンツが入ります。
+
+block footer
+  include ../components/layout/_footer

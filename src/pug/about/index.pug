@@ -1,0 +1,27 @@
+extend ../components/page/_default
+append value
+  - const title = "アバウトのタイトル | Site Name";
+  - const description = "アバウトのディスクリプション";
+  - const keywords = "キーワード,キーワード2,キーワード3";
+  - const path = "..";
+  - const location = "about";
+
+block header
+  include ../components/layout/_header
+
+block visual
+  .main-visual.is-top
+    .main-visual__content
+      .main-visual__text 会社概要
+
+block section
+  .section
+    .inner
+      h2.section__title 会社概要
+      .section__lead About
+        .section__body
+          p アバウトのコンテンツが入ります。
+          
+
+block footer
+  include ../components/layout/_footer

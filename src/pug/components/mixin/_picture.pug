@@ -1,0 +1,7 @@
+mixin picture(className, imgName, extension, altName)
+  picture(class=className)
+    source(srcset=imgPath + imgName+ "-sp" + "." + extension, media="(max-width: 768px)",)
+    img(src=imgPath + imgName + "." + extension, alt=altName)
+
+mixin img(className, imgName, extension, altName)
+  img(src=imgPath + imgName + "." + extension, alt=altName)

@@ -12,15 +12,6 @@ const uglify = require("gulp-uglify");  //javascript の圧縮
 const rename = require("gulp-rename"); //css,jsの圧縮したファイル名を変更
 const htmlBeautify =require("gulp-html-beautify"); //HTMLの整形
 
-
-
-const srcBase = "./src/assets/";
-const srcPath = {
-  css: srcBase + "/scss/**/*.scss",
-  cssNone: "!" + srcBase + "/scss/**/*.scss",
-  img: srcBase + "/img/**/*",
-}
-
 function compilePug(done) {
   return gulp.src(["./src/pug/**/*.pug","!./src/pug/**/_*.pug"])
   .pipe(pug({
@@ -96,5 +87,6 @@ exports.watch = watch;
 exports.browserInit = browserInit;
 exports.minJS = minJS;
 exports.formatHTML = formatHTML;
+exports.compilePug = compilePug;
 exports.build = gulp.parallel(formatHTML,minJS,compileSass,copyImage);
 exports.dev = gulp.parallel(browserInit, watch);
