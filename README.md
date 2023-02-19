@@ -31,7 +31,6 @@ npm update
     │       │   ├── _index.scss
     │       │   └── _test.scss
     │       └── style.scss
-    ├── index.html
     └── pug
         ├── about
         │   ├── bout.pug
@@ -69,8 +68,7 @@ npm update
 ```
 
 ## Sass
-### Sass役割
-#### style.scss
+### style.scss
 各ファイルを読み込む
 ```
 @use "component";
@@ -80,7 +78,6 @@ npm update
 @use "project";
 @use "utility";  
 ```
-#### style.scss
 ### component 一般的によく使われるパターン
 c-class名.scss
 _index.scss  @use "";   格納
