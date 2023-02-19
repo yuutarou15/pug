@@ -19,6 +19,7 @@ npm update
 ```
 ## pug
 ### pugのディレクトリ
+```
 └── src
     ├── assets
     │   ├── img
@@ -65,3 +66,4 @@ npm update
         ├── index.pug
         └── news
             └── index.pug
+```
