@@ -1,0 +1,44 @@
+@use "../global" as g;
+.p-header {
+  background-color: rgba($color: #ffffff, $alpha: 0.8);
+  $this: &;
+  &__inner {
+    display: flex;
+    justify-content: center;
+  }
+  &__logo {
+    width: 140px;
+    padding: 23px 0;
+    &--link {
+
+    }
+  }
+  &__nav {
+
+  }
+  &__list {
+    display: flex;
+
+  }
+  &__item {
+    flex: 0 0 auto;
+    &:last-child {
+      background-color: g.$accent-color;
+      #{$this}__link {
+        color: #fff;
+      }
+    }
+  } 
+  &__link {
+    width: 100%;
+    padding: 23px 32px;
+    line-height: 1;
+    span {
+      text-align: center;
+      display: block;
+      color: g.$main-color;
+      font-size: 1.2rem;
+      margin-top: 4px;
+    }
+  }
+}

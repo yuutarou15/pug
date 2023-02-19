@@ -1,0 +1,44 @@
+@use "../global" as g;
+html {
+  font-size: 62.5%;
+}
+body {
+  color: g.$text-color;
+  font-family: g.$ff-base;
+  font-size: g.$fz-base;
+  font-weight: g.$fw-base;
+  line-height: g.$lh-base;
+
+	&.is-footer-sns-fixed {
+		padding-bottom: 75px;
+
+    @include g.mq("sp") {
+      padding-bottom: 67px;
+    }
+	}
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  display: inline-block;
+  transition: all .3s ease;
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+@include g.mq(sp) {
+	.is-pc {
+		display: none;
+	}
+}
+
+@include g.mq(pc) {
+	.is-sp{
+		display: none;
+	}
+}

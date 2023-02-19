@@ -1,9 +1,6 @@
+@use "component";
 @use "foundation";
-
-body {
-  display: block;
-  animation: none;
-  color: blue;
-  border: 0;
-  background-color: green;
-}
+@use "global";
+@use "layout";
+@use "project";
+@use "utility";

@@ -1,0 +1,24 @@
+@use "../global" as g;
+
+.p-concept {
+  &__img {
+    width: 77.777%;
+    margin-left: auto;
+  }
+  &__content {
+    background-color: g.$accent-color;
+    display: inline-block;
+    padding: 64px 53px;
+    &--title {
+      font-size: 2.4rem;
+      color: #fff;
+    }
+    &--text {
+      color: #fff;
+      line-height: 2.5;
+    }
+    &--link {
+      color: #fff;
+    }
+  }
+}
