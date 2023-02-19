@@ -19,77 +19,49 @@ npm update
 ```
 ## pug
 ### pugのディレクトリ
-root/
-	├ public
-	│	 ├ index.html
-	│	 ├ about/
-	│  ├ index.html
-  │  │
-	│  ├ assets/
-	│     ├ css/
-	│     │  ├ style.css
-	│		  │	 └ style.min.css
-	│			│
-	│	    ├ js/ 
-	│		  │  ├ scriot.js 
-	│		  │  └ script.min.js 
-	│			│
-  │     └ img/
-  │
-  ├ src
-  │  ├ assets/
-  │  │  ├ css/
-  │  │  │  ├ style.css
-  │  │  │	 └ style.min.css
-  │  │	│
-  │  │  ├ js/ 
-	│  │	│  ├ scriot.js 
-  │  │	│  │  └ script.min.js 
-	│  │	│
-  │  │  └ img/
-  │  │
-  │  ├ pug
-  │     ├ index.pug
-  │     ├ about
-  │     │  └ _index.pug
-  │     │
-  │			├ news
-  │     │  └ _index.pug
-  │     │
-	│			├ components 
-  │        │
-  │        ├ _config.pug 
-	│			   │
-  │        ├ component
-  │        │   ├ _accordion.pug
-  │        │   └ _scroll-top.pug
-  │        │ 
-  │        ├ gtm
-  │        │  ├ _gtmBodyTag.pug
-  │        │  └ _gtmHeadTag.pug
-  │        │ 
-  │        ├ head
-  │        │  ├ _favicon.pug
-  │        │  ├ _meta.pug    
-  │        │  └ _stylesheet.pug
-  │        │
-  │        ├ layout
-  │        │  ├ _footer.pug
-  │        │  └ _header.pug
-  │        │  
-  │        ├ mixin     
-  │        │  └ _picture.pug
-  │        │  
-  │        ├ page
-  │        │  └ _default.pug
-  │        │ 
-  │        ├ project 
-  │        │  ├ _about 
-  │        │  └ _top.pug
-  │        │ 
-  │        ├ script 
-	│		  	    └ _script.pug 
-	│				  
-  ├ gulpfile.js 
-  ├ package-lock.json
-	└ package.json			
+└── src
+    ├── assets
+    │   ├── img
+    │   │   └── cat.jpg
+    │   ├── js
+    │   │   └── script.js
+    │   └── scss
+    │       ├── foundation
+    │       │   ├── _index.scss
+    │       │   └── _test.scss
+    │       └── style.scss
+    ├── index.html
+    └── pug
+        ├── about
+        │   ├── bout.pug
+        │   └── index.pug
+        ├── components
+        │   ├── _config.pug
+        │   ├── component
+        │   │   ├── _accordion.pug
+        │   │   └── _scroll-top.pug
+        │   ├── gtm
+        │   │   ├── _gtmBodyTag.pug
+        │   │   └── _gtmHeadTag.pug
+        │   ├── head
+        │   │   ├── _favicon.pug
+        │   │   ├── _meta.pug
+        │   │   └── _stylesheet.pug
+        │   ├── layout
+        │   │   ├── _footer.pug
+        │   │   └── _header.pug
+        │   ├── mixin
+        │   │   └── _picture.pug
+        │   ├── page
+        │   │   ├── _default.pug
+        │   │   └── _news.pug
+        │   ├── project
+        │   │   ├── _about.pug
+        │   │   └── _top.pug
+        │   └── script
+        │       └── _script.pug
+        ├── contact
+        │   └── index.pug
+        ├── index.pug
+        └── news
+            └── index.pug
