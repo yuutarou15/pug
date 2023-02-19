@@ -84,13 +84,13 @@ _index.scss  @use "";   格納
 ### foundation 　デフォルトスタイルの初期化や、基本的なスタイルを定義
 _index.scss  @use "";   格納
 ### global　各モジュールでグローバルの変数やmixin
-_index.scss  @forward ""; 格納
+_index.scss  @forward ""; 格納  
 @use "../global" as g; 読み込み
 ### layout　ページを構成するヘッダーやメインのコンテンツエリア
 _index.scss  @use "";   格納
 ### project　プロジェクト固有のパターン
-_index.scss  @use "";   格納
-utility　わずかなスタイルの調整のための便利クラスなどを定義
+_index.scss  @use "";   格納  
+### utility　わずかなスタイルの調整のための便利クラスなどを定義
 _index.scss  @use "";   格納
 
 
