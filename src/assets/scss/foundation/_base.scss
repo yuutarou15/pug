@@ -32,13 +32,13 @@ a {
 }
 
 @include g.mq(sp) {
-	.is-pc {
+	.pc {
 		display: none;
 	}
 }
 
 @include g.mq(pc) {
-	.is-sp{
+	.sp{
 		display: none;
 	}
 }
